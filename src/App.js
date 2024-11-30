@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import LestSide from "./component/LeftSide/LestSide";
+import MiddleSide from "./component/Middle/MiddleSide";
+import RightSide from "./component/Right/RightSide";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="flex h-screen">
+      <div   className="w-1/5 bg-black text-white">
+      <LestSide/>
+      </div>
+      <div className="w-3/5 bg-gradient-to-b from-red-500 to-black text-white">
+      <MiddleSide/>
+      </div>
+        <div className="w-1/5 bg-gradient-to-b from-red-900 to-black text-white">
+        <RightSide />
+        </div>
+      
+      </div>
+    </>
   );
 }
 

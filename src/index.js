@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import SpotifyProvider from './component/SpotifyContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <SpotifyProvider>
     <App />
-  </React.StrictMode>
+  </SpotifyProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
